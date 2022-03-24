@@ -76,6 +76,36 @@ namespace ClientSocket2
         // 파일 총 개수
         public int Total_Files_Count;
 
+        // 일별 파일 사이즈 (2022-03-24 추가)
+        int Total_File_Size_LineChart_2022_02_08_Count;
+        int Total_File_Size_LineChart_2022_02_09_Count;
+        int Total_File_Size_LineChart_2022_02_10_Count;
+        int Total_File_Size_LineChart_2022_02_11_Count;
+        int Total_File_Size_LineChart_2022_02_12_Count;
+        int Total_File_Size_LineChart_2022_02_13_Count;
+        int Total_File_Size_LineChart_2022_02_14_Count;
+        int Total_File_Size_LineChart_2022_02_15_Count;
+
+        // 일별 저장 사이즈 (2022-03-24 추가)
+        int Total_Write_Size_LineChart_2022_02_08_Count;
+        int Total_Write_Size_LineChart_2022_02_09_Count;
+        int Total_Write_Size_LineChart_2022_02_10_Count;
+        int Total_Write_Size_LineChart_2022_02_11_Count;
+        int Total_Write_Size_LineChart_2022_02_12_Count;
+        int Total_Write_Size_LineChart_2022_02_13_Count;
+        int Total_Write_Size_LineChart_2022_02_14_Count;
+        int Total_Write_Size_LineChart_2022_02_15_Count;
+
+        // 일별 전송 사이즈 (2022-03-24 추가)
+        int Total_Data_Transferred_LineChart_2022_02_08_Count;
+        int Total_Data_Transferred_LineChart_2022_02_09_Count;
+        int Total_Data_Transferred_LineChart_2022_02_10_Count;
+        int Total_Data_Transferred_LineChart_2022_02_11_Count;
+        int Total_Data_Transferred_LineChart_2022_02_12_Count;
+        int Total_Data_Transferred_LineChart_2022_02_13_Count;
+        int Total_Data_Transferred_LineChart_2022_02_14_Count;
+        int Total_Data_Transferred_LineChart_2022_02_15_Count;
+
         public void Read_Chart_Data(BinaryReader bRead)
         {
             // 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
@@ -141,6 +171,36 @@ namespace ClientSocket2
 
             // 파일 총 개수 
             Total_Files_Count = bRead.ReadInt32();
+
+            // 일별 파일 사이즈 (2022-03-24 추가)
+            Total_File_Size_LineChart_2022_02_08_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_09_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_10_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_11_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_12_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_13_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_14_Count = bRead.ReadInt32();
+            Total_File_Size_LineChart_2022_02_15_Count = bRead.ReadInt32();
+
+            // 일별 저장 사이즈 (2022-03-24 추가)
+            Total_Write_Size_LineChart_2022_02_08_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_09_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_10_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_11_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_12_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_13_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_14_Count = bRead.ReadInt32();
+            Total_Write_Size_LineChart_2022_02_15_Count = bRead.ReadInt32();
+
+            // 일별 전송 사이즈 (2022-03-24 추가)
+            Total_Data_Transferred_LineChart_2022_02_08_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_09_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_10_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_11_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_12_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_13_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_14_Count = bRead.ReadInt32();
+            Total_Data_Transferred_LineChart_2022_02_15_Count = bRead.ReadInt32();
         }
         public void Print_Chart_Data(ChartData a)
         {
@@ -207,6 +267,37 @@ namespace ClientSocket2
 
             // 파일 총 개수 
             Console.WriteLine(a.Total_Files_Count);
+
+            // 일별 파일 사이즈 (2022-03-24 추가)
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_08_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_09_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_10_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_11_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_12_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_13_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_14_Count);
+            Console.WriteLine(a.Total_File_Size_LineChart_2022_02_15_Count);
+
+            // 일별 저장 사이즈 (2022-03-24 추가)
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_08_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_09_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_10_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_11_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_12_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_13_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_14_Count);
+            Console.WriteLine(a.Total_Write_Size_LineChart_2022_02_15_Count);
+
+            // 일별 전송 사이즈 (2022-03-24 추가)
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_08_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_09_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_10_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_11_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_12_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_13_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_14_Count);
+            Console.WriteLine(a.Total_Data_Transferred_LineChart_2022_02_15_Count);
+
         }
     }
     internal static class Program
