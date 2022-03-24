@@ -1,0 +1,11 @@
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\bin\Debug\ClientSocket2.exe.config
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\bin\Debug\ClientSocket2.exe
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\bin\Debug\ClientSocket2.pdb
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.csproj.AssemblyReference.cache
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.csproj.SuggestedBindingRedirects.cache
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.Form1.resources
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.Properties.Resources.resources
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.csproj.GenerateResource.cache
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.csproj.CoreCompileInputs.cache
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.exe
+C:\Users\BIT\source\repos\Winforms\ClientSocket2\ClientSocket2\obj\Debug\ClientSocket2.pdb

@@ -32,7 +32,7 @@ namespace ClientSocket2
         public int Total_Backup_Count_LineChart_2022_02_15_Completed_Count;
 
         // 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
-        public int File_Statistics_PieChart_Total_Size;
+        public int File_Statistics_PieChart_Data_Transferred;
         public int File_Statistics_PieChart_Total_File_Size;
         public int File_Statistics_PieChart_Total_Write_Size;
 
@@ -66,7 +66,16 @@ namespace ClientSocket2
         public int Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count;
         public int Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count;
         public int Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count;
-        
+
+        // 스케줄 별 개수 표시 
+        public int Schedule_testsc1_Count;
+        public int Schedule_testsc2_Count;
+        public int Schedule_testsc3_Count;
+        public int Schedule_testsc4_Count;
+
+        // 파일 총 개수
+        public int Total_Files_Count;
+
         public void Read_Chart_Data(BinaryReader bRead)
         {
             // 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
@@ -89,7 +98,7 @@ namespace ClientSocket2
             Total_Backup_Count_LineChart_2022_02_15_Completed_Count = bRead.ReadInt32();
 
             // 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
-            File_Statistics_PieChart_Total_Size = bRead.ReadInt32();
+            File_Statistics_PieChart_Data_Transferred = bRead.ReadInt32();
             File_Statistics_PieChart_Total_File_Size = bRead.ReadInt32();
             File_Statistics_PieChart_Total_Write_Size = bRead.ReadInt32();
 
@@ -123,6 +132,15 @@ namespace ClientSocket2
             Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count = bRead.ReadInt32();
             Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count = bRead.ReadInt32();
             Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count = bRead.ReadInt32();
+
+            // 스케줄 별 개수 표시 
+            Schedule_testsc1_Count = bRead.ReadInt32();
+            Schedule_testsc2_Count = bRead.ReadInt32();
+            Schedule_testsc3_Count = bRead.ReadInt32();
+            Schedule_testsc4_Count = bRead.ReadInt32();
+
+            // 파일 총 개수 
+            Total_Files_Count = bRead.ReadInt32();
         }
         public void Print_Chart_Data(ChartData a)
         {
@@ -146,7 +164,7 @@ namespace ClientSocket2
             Console.WriteLine(a.Total_Backup_Count_LineChart_2022_02_15_Completed_Count);
 
             // 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
-            Console.WriteLine(a.File_Statistics_PieChart_Total_Size);
+            Console.WriteLine(a.File_Statistics_PieChart_Data_Transferred);
             Console.WriteLine(a.File_Statistics_PieChart_Total_File_Size);
             Console.WriteLine(a.File_Statistics_PieChart_Total_Write_Size);
 
@@ -180,6 +198,15 @@ namespace ClientSocket2
             Console.WriteLine(a.Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count);
             Console.WriteLine(a.Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count);
             Console.WriteLine(a.Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count);
+
+            // 스케줄 별 개수 표시 
+            Console.WriteLine(a.Schedule_testsc1_Count);
+            Console.WriteLine(a.Schedule_testsc2_Count);
+            Console.WriteLine(a.Schedule_testsc3_Count);
+            Console.WriteLine(a.Schedule_testsc4_Count);
+
+            // 파일 총 개수 
+            Console.WriteLine(a.Total_Files_Count);
         }
     }
     internal static class Program
